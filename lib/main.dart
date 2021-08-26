@@ -3,7 +3,10 @@
 // internal (add dependecies)
 // ui
 
+import 'package:chat_app_1/presentation/pages/ConversationPage.dart';
 import 'package:flutter/material.dart';
+
+import 'presentation/pages/ConversationPageList.dart';
 
 void main() => runApp(MyApp());
 
@@ -13,8 +16,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        title: 'Messio',
-        theme: ThemeData(primarySwatch: Colors.yellow),
+        title: 'ChatApp',
+        theme: ThemeData(primarySwatch: Colors.grey),
         home: MyHomePage(title: 'MyChat'));
   }
 }
@@ -30,13 +33,14 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.title),
-      ),
-      body: Center(
-        child: Text("Hi world!"),
-      ),
-    );
+    return ConversationPageList();
+    // return Scaffold(
+    //   appBar: AppBar(
+    //     title: Text(widget.title),
+    //   ),
+    //   body: Center(
+    //     child: Text("Hi world!"),
+    //   ),
+    // );
   }
 }

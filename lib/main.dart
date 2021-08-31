@@ -13,12 +13,12 @@ void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
-  final title = 'Messenger';
 
   @override
   Widget build(BuildContext context) {
+    const String title = 'Messenger';
     return MaterialApp(
-      title: 'Messenger',
+      title: title,
       theme: ThemeData(primarySwatch: Colors.grey),
       debugShowCheckedModeBanner: false,
       home: HomePage(title: title),

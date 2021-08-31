@@ -18,7 +18,7 @@ class _ChatsScreenState extends State<ChatsScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: ChatAppBar(
-        title: title,
+        title: title ,
       ),
       body: ChatsPage(),
       floatingActionButton: FloatingActionButton(

@@ -1,6 +1,4 @@
-import 'package:chat_app_1/domain/example_chat_cards.dart';
-import 'package:chat_app_1/domain/model_chat_card.dart';
-import 'package:chat_app_1/presentation/screens/messages_screen.dart';
+import 'package:chat_app_1/data/examples/example_chat_cards.dart';
 import 'package:chat_app_1/presentation/widgets/chat_card.dart';
 import 'package:flutter/material.dart';
 

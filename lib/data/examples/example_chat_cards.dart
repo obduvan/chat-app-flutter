@@ -1,4 +1,4 @@
-import 'model_chat_card.dart';
+import '../../domain/models/model_chat_card.dart';
 
 class ChatCards {
   static List<ModelChatCard> get chatCards => [

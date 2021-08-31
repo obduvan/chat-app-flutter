@@ -23,8 +23,8 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: HomePage(title: title),
       routes: {
-        '/auth': (context) => const AuthScreen(),
-        '/chats_screen': (context) => ChatsScreen(title: title),
+        AuthScreen.routeName: (context) => const AuthScreen(),
+        ChatsScreen.routeName: (context) => ChatsScreen(title: title),
         MessagesScreen.routeName: (context) => const MessagesScreen(),
       },
     );

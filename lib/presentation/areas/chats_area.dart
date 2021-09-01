@@ -3,28 +3,33 @@ import 'package:chat_app_1/presentation/widgets/chat_card.dart';
 import 'package:flutter/material.dart';
 
 
-class ChatsPage extends StatefulWidget {
-  ChatsPage({Key? key}) : super(key: key);
+class ChatsArea extends StatefulWidget {
+  ChatsArea({Key? key}) : super(key: key);
 
   @override
-  _ChatsPageState createState() => _ChatsPageState();
+  _ChatsAreaState createState() => _ChatsAreaState();
 }
 
-class _ChatsPageState extends State<ChatsPage> {
+class _ChatsAreaState extends State<ChatsArea> {
    @override
   Widget build(BuildContext context) {
     var chatCardsData = ChatCards.chatCards;
 
     return Column(children: [
       Expanded(
-          child: ListView.separated(
-              separatorBuilder: (context, index) => Divider(
-                    color: Colors.grey,
-                  ),
-              itemCount: chatCardsData.length,
-              itemBuilder: (BuildContext context, int index) => ChatCard(
-                    modelChatCard: chatCardsData[index],
-                  )))
+          child: Padding(
+            padding: const EdgeInsets.only(top: 8.0),
+            child: ListView.separated(
+                separatorBuilder: (context, index) => Divider(
+                      color: Colors.grey,
+                      indent: 70,
+                      thickness: 0.2,
+                    ),
+                itemCount: chatCardsData.length,
+                itemBuilder: (BuildContext context, int index) => ChatCard(
+                      modelChatCard: chatCardsData[index],
+                    )),
+          ))
     ]);
   }
 }

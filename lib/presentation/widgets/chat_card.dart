@@ -39,8 +39,9 @@ class ChatCard extends StatelessWidget {
               modelChatCard.name,
               style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
             ),
+            SizedBox(height: 5,),
             Opacity(
-              opacity: 0.64,
+              opacity: 0.65,
               child: Text(
                 modelChatCard.lastMessage,
                 maxLines: 1,
@@ -64,21 +65,21 @@ class ChatCard extends StatelessWidget {
           radius: 26,
           backgroundColor: Colors.black,
         ),
-        if (modelChatCard.isActive)
-          Positioned(
-            right: 0,
-            bottom: 0,
-            child: Container(
-              height: 16,
-              width: 16,
-              decoration: BoxDecoration(
-                color: Colors.grey,
-                shape: BoxShape.circle,
-                border: Border.all(
-                    color: Theme.of(context).scaffoldBackgroundColor, width: 2),
-              ),
-            ),
-          )
+        // if (modelChatCard.isActive)
+        //   Positioned(
+        //     right: 0,
+        //     bottom: 0,
+        //     child: Container(
+        //       height: 16,
+        //       width: 16,
+        //       decoration: BoxDecoration(
+        //         color: Colors.grey,
+        //         shape: BoxShape.circle,
+        //         border: Border.all(
+        //             color: Theme.of(context).scaffoldBackgroundColor, width: 2),
+        //       ),
+        //     ),
+        //   )
       ],
     );
   }

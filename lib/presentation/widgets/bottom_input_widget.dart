@@ -12,7 +12,7 @@ class BottomInputWidget extends StatelessWidget {
       color: Colors.white,
       child: Row(
         children: [
-          SizedBox(width: 0),
+          SizedBox(width: 40),
           Expanded(
             child: TextField(
               decoration: InputDecoration(

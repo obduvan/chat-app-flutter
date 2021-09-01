@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class Palette{
+class Palette {
   static const primaryTextColor = Colors.black;
   static const secondaryTextColor = Colors.blue;
   static const primaryBackgroundColor = Colors.blue;

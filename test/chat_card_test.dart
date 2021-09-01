@@ -1,8 +1,6 @@
-import 'package:chat_app_1/data/examples/example_chat_cards.dart';
 import 'package:chat_app_1/domain/models/model_chat_card.dart';
 import 'package:chat_app_1/presentation/widgets/chat_card.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_launcher_icons/constants.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {

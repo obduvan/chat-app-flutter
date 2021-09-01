@@ -4,7 +4,7 @@ import 'package:flutter_test/flutter_test.dart';
 
 void main(){
   testWidgets('Main UI test', (WidgetTester tester) async {
-      await tester.pumpWidget(MyApp());
+      await tester.pumpWidget(Messenger());
 
       expect(find.byType(ChatsScreen), findsOneWidget);
   });

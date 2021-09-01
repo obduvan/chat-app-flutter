@@ -10,12 +10,12 @@ class MessageCloud extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.only(left: 10, right: 10, top: 10, bottom: 10),
+      padding: const EdgeInsets.only(left: 10, right: 10, top: 10, bottom: 10),
       alignment: (messageModel.messageType == MessageType.received
           ? Alignment.topLeft
           : Alignment.topRight),
       child: Container(
-        constraints: BoxConstraints(maxWidth: 200),
+        constraints: const BoxConstraints(maxWidth: 200),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(7),
         
@@ -23,10 +23,10 @@ class MessageCloud extends StatelessWidget {
               ? Colors.blueGrey[100]
               : Colors.grey.shade200),
         ),
-        padding: EdgeInsets.all(10),
+        padding: const EdgeInsets.all(10),
         child: Text(
           messageModel.messageContent,
-          style: TextStyle(fontSize: 15),
+          style: const TextStyle(fontSize: 15),
         ),
       ),
     );

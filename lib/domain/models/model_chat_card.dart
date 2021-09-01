@@ -8,5 +8,5 @@ class ModelChatCard {
       this.image = '',
       this.time = '',
       this.isActive = false,
-      chat});
+      });
 }

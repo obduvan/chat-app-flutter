@@ -12,7 +12,7 @@ class MessagesScreen extends StatelessWidget {
 
     return Scaffold(
       appBar: MessagesAppBar(userName: userName),
-      body: ChatArea(),
+      body: const ChatArea(),
     );
   }
 }

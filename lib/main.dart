@@ -9,10 +9,10 @@ import 'package:flutter/material.dart';
 import 'presentation/screens/auth_screen.dart';
 import 'presentation/screens/chats_screen.dart';
 
-void main() => runApp(MyApp());
+void main() => runApp(const Messenger());
 
-class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+class Messenger extends StatelessWidget {
+  const Messenger({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
       home: HomePage(title: title),
       routes: {
         AuthScreen.routeName: (context) => const AuthScreen(),
-        ChatsScreen.routeName: (context) => ChatsScreen(title: title),
+        ChatsScreen.routeName: (context) => const ChatsScreen(title: title),
         MessagesScreen.routeName: (context) => const MessagesScreen(),
       },
     );

@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
 
-class BottomInputWidget extends StatelessWidget {
-  const BottomInputWidget({Key? key}) : super(key: key);
+class ChatInputWidget extends StatelessWidget {
+  const ChatInputWidget({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Container(
       height: 55,
-      padding: EdgeInsets.only(left: 1, bottom: 6, top: 6, right: 15),
+      padding: const EdgeInsets.only(left: 1, bottom: 6, top: 6, right: 15),
       width: double.infinity,
       color: Colors.white,
       child: Row(
         children: [
-          SizedBox(width: 40),
-          Expanded(
+          const SizedBox(width: 40),
+          const Expanded(
             child: TextField(
               decoration: InputDecoration(
                 hintText: 'Message',
@@ -26,9 +26,9 @@ class BottomInputWidget extends StatelessWidget {
             height: 50,
             child: FloatingActionButton(
               onPressed: () {},
-              child: Padding(
+              child: const Padding(
                 padding: EdgeInsets.only(left: 5),
-                child: const Icon(
+                child: Icon(
                   Icons.send,
                   color: Colors.white,
                   size: 25,

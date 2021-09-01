@@ -30,7 +30,7 @@ class _MessagesAppBarState extends State<MessagesAppBar> {
 Row getUserData({required String userName}) {
   return Row(
     children: [
-      CircleAvatar(
+      const CircleAvatar(
         radius: 19,
       ),
       Padding(

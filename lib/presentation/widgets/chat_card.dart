@@ -9,7 +9,6 @@ class ChatCard extends StatelessWidget {
   }) : super(key: key);
 
   final ModelChatCard modelChatCard;
-  // final VoidCallback press;
 
   @override
   Widget build(BuildContext context) {
@@ -60,7 +59,7 @@ class ChatCard extends StatelessWidget {
 
   Stack getAvatar(BuildContext context) {
     return Stack(
-      children: [
+      children: const [
         CircleAvatar(
           radius: 26,
           backgroundColor: Colors.black,

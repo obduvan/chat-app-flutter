@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 
 
 class ChatsArea extends StatefulWidget {
-  ChatsArea({Key? key}) : super(key: key);
+  const ChatsArea({Key? key}) : super(key: key);
 
   @override
   _ChatsAreaState createState() => _ChatsAreaState();
@@ -20,7 +20,7 @@ class _ChatsAreaState extends State<ChatsArea> {
           child: Padding(
             padding: const EdgeInsets.only(top: 8.0),
             child: ListView.separated(
-                separatorBuilder: (context, index) => Divider(
+                separatorBuilder: (context, index) => const Divider(
                       color: Colors.grey,
                       indent: 70,
                       thickness: 0.2,

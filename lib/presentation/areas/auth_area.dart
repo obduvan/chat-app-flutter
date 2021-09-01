@@ -52,7 +52,6 @@ class AuthArea extends StatelessWidget {
       decoration: InputDecoration(
         hintText: 'Login',
         counterText: '',
-        // contentPadding: EdgeInsets.all(10),
       ),
     );
   }
@@ -64,7 +63,6 @@ class AuthArea extends StatelessWidget {
       decoration: InputDecoration(
         counterText: '',
         hintText: 'Password',
-        // contentPadding: EdgeInsets.all(10),
       ),
     );
   }

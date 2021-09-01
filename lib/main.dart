@@ -21,9 +21,7 @@ class Messenger extends StatelessWidget {
       title: title,
       theme: ThemeData(primarySwatch: Colors.grey),
       debugShowCheckedModeBanner: false,
-      // home: HomePage(title: title),
       home: AuthScreen(),
-
       routes: {
         AuthScreen.routeName: (context) => const AuthScreen(),
         ChatsScreen.routeName: (context) => const ChatsScreen(title: title),
@@ -32,4 +30,3 @@ class Messenger extends StatelessWidget {
     );
   }
 }
-

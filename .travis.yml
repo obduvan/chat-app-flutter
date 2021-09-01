@@ -10,9 +10,7 @@ install:
   - flutter doctor
   - flutter --version
 script:
-  - flutter packages get
-  - flutter analyze --no-pub --no-current-package lib/ test/
-  - flutter test --no-pub test/
+  - ./flutter/bin/flutter test
 cache:
   directories:
     - $HOME/.pub-cache

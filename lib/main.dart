@@ -21,7 +21,9 @@ class Messenger extends StatelessWidget {
       title: title,
       theme: ThemeData(primarySwatch: Colors.grey),
       debugShowCheckedModeBanner: false,
-      home: HomePage(title: title),
+      // home: HomePage(title: title),
+      home: AuthScreen(),
+
       routes: {
         AuthScreen.routeName: (context) => const AuthScreen(),
         ChatsScreen.routeName: (context) => const ChatsScreen(title: title),
@@ -31,14 +33,3 @@ class Messenger extends StatelessWidget {
   }
 }
 
-class HomePage extends StatelessWidget {
-  HomePage({Key? key, required this.title}) : super(key: key);
-  final String title;
-
-  @override
-  Widget build(BuildContext context) {
-    return ChatsScreen(
-      title: title,
-    );
-  }
-}

@@ -1,5 +1,3 @@
-import 'dart:ui';
-
 import 'package:chat_app_1/domain/models/model_message.dart';
 import 'package:flutter/material.dart';
 
@@ -18,7 +16,6 @@ class MessageCloud extends StatelessWidget {
         constraints: const BoxConstraints(maxWidth: 200),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(7),
-        
           color: (messageModel.messageType == MessageType.received
               ? Colors.blueGrey[100]
               : Colors.grey.shade200),

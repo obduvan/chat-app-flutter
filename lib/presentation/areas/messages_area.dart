@@ -3,7 +3,7 @@ import 'package:chat_app_1/presentation/widgets/message_cloud.dart';
 import 'package:flutter/material.dart';
 
 class MessagesArea extends StatefulWidget {
-  MessagesArea({Key? key}) : super(key: key);
+  const MessagesArea({Key? key}) : super(key: key);
 
   @override
   _MessagesAreaState createState() => _MessagesAreaState();

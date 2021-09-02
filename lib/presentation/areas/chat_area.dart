@@ -1,5 +1,5 @@
 import 'package:chat_app_1/presentation/areas/messages_area.dart';
-import 'package:chat_app_1/presentation/widgets/bottom_input_widget.dart';
+import 'package:chat_app_1/presentation/widgets/chat_input_widget.dart';
 import 'package:flutter/material.dart';
 
 class ChatArea extends StatelessWidget {
@@ -9,9 +9,9 @@ class ChatArea extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       mainAxisAlignment: MainAxisAlignment.end,
-      children: [
-        MessagesArea(),
-        BottomInputWidget(),
+      children: const [
+         MessagesArea(),
+         ChatInputWidget(),
       ],
     );
   }

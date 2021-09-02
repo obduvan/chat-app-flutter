@@ -12,14 +12,14 @@ class ChatsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: ChatDrawer(),
+      drawer: const ChatDrawer(),
       appBar: ChatAppBar(
         title: title,
       ),
       body: ChatsArea(),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
-        child: Icon(
+        child: const Icon(
           Icons.person_add_alt_1,
           color: Colors.white,
         ),

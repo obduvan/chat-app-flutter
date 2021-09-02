@@ -13,8 +13,8 @@ class ChatAppBar extends StatelessWidget implements PreferredSizeWidget {
       title: Text(title),
       actions: [
         Container(
-          child: Icon(Icons.search),
-          padding: EdgeInsets.only(right: 15),
+          child: const Icon(Icons.search),
+          padding: const EdgeInsets.only(right: 15),
         )
       ],
       elevation: 2,
@@ -22,5 +22,5 @@ class ChatAppBar extends StatelessWidget implements PreferredSizeWidget {
   }
 
   @override
-  Size get preferredSize => Size.fromHeight(kToolbarHeight);
+  Size get preferredSize => const Size.fromHeight(kToolbarHeight);
 }

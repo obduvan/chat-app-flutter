@@ -11,21 +11,21 @@ class AuthArea extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          getLoginField(),
-          SizedBox(
+          _getLoginField(),
+          const SizedBox(
             height: 15,
           ),
-          getPasswordField(),
-          SizedBox(
+          _getPasswordField(),
+          const SizedBox(
             height: 50,
           ),
-          getButton(context),
+          _getButton(context),
         ],
       ),
     );
   }
 
-  Material getButton(BuildContext context) {
+  Material _getButton(BuildContext context) {
     return Material(
       color: Colors.grey[400],
       child: MaterialButton(
@@ -46,21 +46,21 @@ class AuthArea extends StatelessWidget {
     );
   }
 
-  TextField getLoginField() {
+  TextField _getLoginField() {
     return TextField(
       maxLength: 20,
-      decoration: InputDecoration(
+      decoration: const InputDecoration(
         hintText: 'Login',
         counterText: '',
       ),
     );
   }
 
-  TextField getPasswordField() {
+  TextField _getPasswordField() {
     return TextField(
       obscureText: true,
       maxLength: 30,
-      decoration: InputDecoration(
+      decoration: const InputDecoration(
         counterText: '',
         hintText: 'Password',
       ),

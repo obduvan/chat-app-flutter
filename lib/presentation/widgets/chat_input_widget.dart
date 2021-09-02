@@ -30,11 +30,11 @@ class ChatInputWidget extends StatelessWidget {
                 padding: EdgeInsets.only(left: 5),
                 child: Icon(
                   Icons.send,
-                  color: Colors.white,
+                  color: Colors.grey,
                   size: 25,
                 ),
               ),
-              backgroundColor: Colors.black26,
+              backgroundColor: Colors.white,
               elevation: 0,
             ),
           ),
